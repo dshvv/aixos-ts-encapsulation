@@ -15,6 +15,5 @@ class Rquest extends Http{
     public test(): Promise<any>{
         return this.get('/getTeachers');
     }
-    
 }
 export default Rquest.instance;

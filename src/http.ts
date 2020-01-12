@@ -2,8 +2,7 @@ import axios, { AxiosPromise, AxiosRequestConfig, Method } from 'axios';
 axios.defaults.baseURL = "http://dshvv.com:7001";
 axios.defaults.headers = {'Access-Control-Allow-Origin': '*'};
 
-
-abstract class Http {
+class Http {
     get(url: string, data?:any, headers?:any) {
         return this.request('get', url, data, headers);
     }
